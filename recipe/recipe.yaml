@@ -15,6 +15,8 @@ source:
       - 0001-Relax-constraints-on-dependencies.patch
       # upstream builds with maturin to bundle the optional Rust harness; we ship pure Python
       - 0002-Build-pure-python-wheel-with-hatchling.patch
+      # until is addressed https://github.com/conda-forge/mistral-vibe-feedstock/issues/74
+      - 0003-Handle-optional-mistralai_vibe_local_harness-import.patch
 
 build:
   number: 0
