@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2.25.8"
+  version: "2.26.0"
   python_min: "3.12"
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   - url: https://github.com/mistralai/mistral-vibe/archive/refs/tags/v${{ version }}.tar.gz
-    sha256: d042c88f6f533cd693080272c3357dcd73d095397208a95e0b9ea9a23d1f761a
+    sha256: 01a116f531418d31ff24ba96c8680ed389ccaa721e9c0b5ceaa762ad63280fcd
     patches:
       - 0001-Relax-constraints-on-dependencies.patch
       # upstream builds with maturin to bundle the optional Rust harness; we ship pure Python
@@ -47,6 +47,7 @@ requirements:
     - charset-normalizer ==3.4.7
     - click ==8.3.3
     - colorama ==0.4.6
+    - croniter ==6.2.4
     - cryptography ==50.0.0
     - eval-type-backport ==0.3.1
     - gitdb ==4.0.12
@@ -98,7 +99,7 @@ requirements:
     - pydantic-core ==2.46.4
     - pydantic-settings ==2.14.2
     - pygments ==2.20.0
-    - pyjwt ==2.13.0
+    - pyjwt ==2.15.1
     - pyperclip ==1.11.0
     - python-dateutil ==2.9.0.post0
     - python-dotenv ==1.2.2
@@ -139,7 +140,7 @@ requirements:
     - typing-extensions ==4.16.0
     - typing-inspection ==0.4.2
     - uc-micro-py ==2.0.0
-    - urllib3 ==2.7.0
+    - urllib3 ==2.8.0
     - uvicorn ==0.46.0
     - watchfiles ==1.2.0
     - websockets ==16.0
