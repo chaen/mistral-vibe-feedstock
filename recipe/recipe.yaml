@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2.25.8"
+  version: "2.26.0"
   python_min: "3.12"
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   - url: https://github.com/mistralai/mistral-vibe/archive/refs/tags/v${{ version }}.tar.gz
-    sha256: d042c88f6f533cd693080272c3357dcd73d095397208a95e0b9ea9a23d1f761a
+    sha256: 01a116f531418d31ff24ba96c8680ed389ccaa721e9c0b5ceaa762ad63280fcd
     patches:
       - 0001-Relax-constraints-on-dependencies.patch
       # upstream builds with maturin to bundle the optional Rust harness; we ship pure Python
